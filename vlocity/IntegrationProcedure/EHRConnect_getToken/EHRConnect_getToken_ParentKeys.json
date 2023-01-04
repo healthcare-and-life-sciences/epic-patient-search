@@ -1,0 +1,5 @@
+[
+    "DataRaptor/DRGetEpicToken",
+    "DataRaptor/DRStoreEpicToken",
+    "DataRaptor/GetCustomSetting"
+]

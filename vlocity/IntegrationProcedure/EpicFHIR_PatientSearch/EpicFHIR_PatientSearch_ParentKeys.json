@@ -1,0 +1,7 @@
+[
+    "DataRaptor/DRPatientSearchTransform2",
+    "DataRaptor/DRPatientSearchXMLtoJSON",
+    "DataRaptor/GetCustomSetting",
+    "IntegrationProcedure/EHRConnect_getToken",
+    "IntegrationProcedure/Patient_SearchCreate"
+]
