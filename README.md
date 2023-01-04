@@ -1,3 +1,4 @@
+![](/images/ahlsbanner.png)
 # A-HLS Epic Patient Search Documentation 
 
 ## **Overview**
@@ -8,6 +9,7 @@ The accelerator itself does not require any middleware. After a few configuratio
 
 It is assumed that an organization has enabled their Patient R4 FHIR API in their Epic system which is what supports the patient search capability.
 
+![](/images/searchimage1.png)
 
 
 ------
@@ -114,7 +116,7 @@ It will also improve a user's experience by providing a single user interface to
       3. client_id = the Client ID for the Salesforce Health Cloud - Clinical Summary FHIR App
       4. jti = salesforce (or your label of choice)
       5. cert = epicfhirnewcert
-
+![](/images/searchimage2.png)
 
 
 1. **Grant Access to the Epic Access Object**
@@ -122,7 +124,7 @@ It will also improve a user's experience by providing a single user interface to
 2. 1. Go to Settings > Profiles and open the Profile of your Administrator
    2. Select “Object Settings” > Epic Access
    3. Edit the Settings and change the Tab Access from Tab Hidden to “Default On”
-   4.
+   4. ![](/images/searchimage3.png)
    5. Ensure that the Access Token and ExpireEpoch fields are set to Read and Edit
    6. Click Save
 
