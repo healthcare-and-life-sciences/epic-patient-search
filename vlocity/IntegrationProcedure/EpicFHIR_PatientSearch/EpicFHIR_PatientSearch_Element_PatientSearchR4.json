@@ -29,7 +29,7 @@
         "restOptions": {
             "clientCertificateName": "",
             "headers": {
-                "Authorization": "Bearer %SetToken:Token%"
+                "Authorization": "Bearer %SetInputs:Token%"
             },
             "isCompressed": false,
             "params": {

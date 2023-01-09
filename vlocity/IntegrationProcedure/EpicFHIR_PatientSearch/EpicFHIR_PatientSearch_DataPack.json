@@ -7,8 +7,6 @@
         "EpicFHIR_PatientSearch_Element_SetInputs.json",
         "EpicFHIR_PatientSearch_Element_DRGetEndpoint.json",
         "EpicFHIR_PatientSearch_Element_ResponseAction2.json",
-        "EpicFHIR_PatientSearch_Element_GetEpicAPIToken.json",
-        "EpicFHIR_PatientSearch_Element_SetToken.json",
         "EpicFHIR_PatientSearch_Element_PatientSearchR4.json",
         "EpicFHIR_PatientSearch_Element_DRTransform1.json",
         "EpicFHIR_PatientSearch_Element_DRTransform2.json",

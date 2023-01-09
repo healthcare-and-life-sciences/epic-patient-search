@@ -11,6 +11,7 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
+            "Token": "%Token%",
             "birthdate": "=%Step1:DOB%",
             "email": "=%Step1:Email%",
             "family": "=%Step1:LastName%",

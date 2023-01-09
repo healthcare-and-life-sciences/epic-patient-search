@@ -36,7 +36,7 @@
         },
         "ssm": false,
         "targetFilter": "Recent",
-        "targetId": "%SearchEpic:Id%",
+        "targetId": "%Id%",
         "targetLWCLayout": "lightning",
         "targetName": "Account",
         "targetType": "Record",

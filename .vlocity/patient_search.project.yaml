@@ -1,0 +1,9 @@
+Name: Patient Search
+ignoreDependencies: false
+VlocityDataPackKeys:
+    - certs/epicfhirnewcert.crt
+    - OmniScript/EHR_EpicPatientSearch_English
+VlocityTypesToFetch:
+    - OmniScript
+SalesforceTypesToFetch:
+    - Certificate

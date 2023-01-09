@@ -1,4 +1,4 @@
 [
-    "Document/CACCBBAIA40f68bb51c124b77ab60b9aea4f5d76d",
+    "IntegrationProcedure/EHRConnect_getToken",
     "IntegrationProcedure/EpicFHIR_PatientSearch"
 ]

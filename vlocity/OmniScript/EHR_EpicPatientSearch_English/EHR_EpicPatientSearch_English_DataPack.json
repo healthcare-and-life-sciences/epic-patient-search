@@ -9,6 +9,8 @@
         "EHR_EpicPatientSearch_English_Element_DOB.json",
         "EHR_EpicPatientSearch_English_Element_Email.json",
         "EHR_EpicPatientSearch_English_Element_TextBlock4.json",
+        "EHR_EpicPatientSearch_English_Element_GetToken.json",
+        "EHR_EpicPatientSearch_English_Element_Token.json",
         "EHR_EpicPatientSearch_English_Element_SearchEpic.json",
         "EHR_EpicPatientSearch_English_Element_SearchResults.json",
         "EHR_EpicPatientSearch_English_Element_TextBlock1.json",
