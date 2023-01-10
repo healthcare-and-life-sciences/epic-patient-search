@@ -54,7 +54,7 @@
                     {
                         "condition": "=",
                         "data": "No matching patient was found in the system.",
-                        "field": "SearchEpic:NoPatientFound"
+                        "field": "NoPatientFound"
                     }
                 ]
             }

@@ -1,4 +1,3 @@
 [
-    "IntegrationProcedure/EHRConnect_getToken",
-    "IntegrationProcedure/EpicFHIR_PatientSearch"
+    "IntegrationProcedure/EHRConnect_getToken"
 ]

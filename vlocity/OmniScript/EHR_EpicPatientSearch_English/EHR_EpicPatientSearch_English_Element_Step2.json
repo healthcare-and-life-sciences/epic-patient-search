@@ -54,7 +54,7 @@
                     {
                         "condition": "<>",
                         "data": "null",
-                        "field": "SearchEpic:Id"
+                        "field": "Id"
                     }
                 ]
             }
