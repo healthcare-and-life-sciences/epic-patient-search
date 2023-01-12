@@ -46,7 +46,23 @@
         "repeatClone": false,
         "repeatLimit": null,
         "required": true,
-        "show": null,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "NameDOB",
+                        "field": "SearchType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "NameTelecom",
+                        "field": "SearchType"
+                    }
+                ]
+            }
+        },
         "showInputWidth": false
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

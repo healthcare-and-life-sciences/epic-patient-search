@@ -30,7 +30,7 @@
         "label": "TextBlock1",
         "sanitize": false,
         "show": null,
-        "text": "<p><img src=\"/servlet/servlet.ImageServer?id=015Dn000000lAhzIAE&amp;docName=CACCBBAIA40f68bb51c124b77ab60b9aea4f5d76d&amp;oid=00DDn000002F9pdMAC\" alt=\"\" width=\"94\" height=\"38\" /></p>\n<p>Enter the patient's Full Name below to select the correct patient.</p>",
+        "text": "<p><img src=\"/servlet/servlet.ImageServer?id=015Dn000000lAhzIAE&amp;docName=CACCBBAIA40f68bb51c124b77ab60b9aea4f5d76d&amp;oid=00DDn000002F9pdMAC\" alt=\"\" width=\"94\" height=\"38\" /></p>",
         "textKey": ""
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

@@ -23,24 +23,37 @@
     "%vlocity_namespace%__PropertySet__c": {
         "HTMLTemplateId": "",
         "accessibleInFutureSteps": false,
-        "autocomplete": null,
         "conditionType": "Hide if False",
-        "controlWidth": 6,
-        "debounceValue": 0,
-        "defaultValue": "",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
         "disOnTplt": false,
         "help": false,
         "helpText": "",
         "helpTextPos": "",
         "hide": false,
         "inputWidth": 12,
-        "label": "Last Name",
-        "mask": "",
-        "maxLength": 255,
-        "minLength": 0,
-        "pattern": "",
-        "placeholder": "",
-        "ptrnErrText": "",
+        "label": "Legal Sex",
+        "optionSource": {
+            "source": "Account.Legal_Sex__c",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "male",
+                "value": "Male"
+            },
+            {
+                "autoAdv": null,
+                "name": "female",
+                "value": "Female"
+            }
+        ],
         "readOnly": false,
         "repeat": false,
         "repeatClone": false,
@@ -48,13 +61,8 @@
         "required": true,
         "show": {
             "group": {
-                "operator": "OR",
+                "operator": "AND",
                 "rules": [
-                    {
-                        "condition": "=",
-                        "data": "NameDOB",
-                        "field": "SearchType"
-                    },
                     {
                         "condition": "=",
                         "data": "NameTelecom",
@@ -66,11 +74,11 @@
         "showInputWidth": false
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,
-    "%vlocity_namespace%__Type__c": "Text",
+    "%vlocity_namespace%__Type__c": "Select",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "LastName",
+    "Name": "Sex",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/LastName"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Sex"
 }

@@ -11,11 +11,14 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
-            "Token": "%Token%",
+            "Token": "=%Token%",
             "birthdate": "=%Step1:DOB%",
             "email": "=%Step1:Email%",
             "family": "=%Step1:LastName%",
-            "given": "=%Step1:FirstName%"
+            "given": "=%Step1:FirstName%",
+            "identifier": "=%Step1:FHIRID%",
+            "legal-sex": "=%Step1:Sex%",
+            "telecom": "=%Step1:Telecom%"
         },
         "executionConditionalFormula": "",
         "failOnStepError": true,

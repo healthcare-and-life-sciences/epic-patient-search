@@ -1,0 +1,92 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Epic Patient Search OmniScript",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Epic Patient Search OmniScript",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "Step1",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Step1",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "Step1",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": "NameDOB",
+        "disOnTplt": false,
+        "documentNames": [
+            "CACCBACHAa57d303fa05f4c5da3e980a753b4fc4e",
+            "CACCBACHAcc702774510a40f7affd6d1900887bc7",
+            "CACCBACHAf77ea1eb4ed240dfb71be136d11bc760"
+        ],
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 3,
+        "label": "How would you like to search for the patient?",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": "CACCBACHAa57d303fa05f4c5da3e980a753b4fc4e",
+                "imgId": "/servlet/servlet.FileDownload?file=015Dn000000kwuhIAA&docName=CACCBACHAa57d303fa05f4c5da3e980a753b4fc4e",
+                "name": "ID",
+                "value": "Patient ID"
+            },
+            {
+                "autoAdv": null,
+                "developerName": "CACCBACHAcc702774510a40f7affd6d1900887bc7",
+                "imgId": "/servlet/servlet.FileDownload?file=015Dn000000kx4jIAA&docName=CACCBACHAcc702774510a40f7affd6d1900887bc7",
+                "name": "NameDOB",
+                "value": "Name and Birthdate"
+            },
+            {
+                "autoAdv": null,
+                "developerName": "CACCBACHAf77ea1eb4ed240dfb71be136d11bc760",
+                "imgId": "/servlet/servlet.FileDownload?file=015Dn000000kwuYIAQ&docName=CACCBACHAf77ea1eb4ed240dfb71be136d11bc760",
+                "name": "NameTelecom",
+                "value": "Name, Sex, and Phone/Email"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Radio",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "SearchType",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/SearchType"
+}

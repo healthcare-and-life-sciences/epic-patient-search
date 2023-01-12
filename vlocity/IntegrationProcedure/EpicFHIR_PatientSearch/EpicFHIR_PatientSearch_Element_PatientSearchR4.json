@@ -35,7 +35,10 @@
             "params": {
                 "birthdate": "%SetInputs:birthdate%",
                 "family": "%SetInputs:family%",
-                "given": "%SetInputs:given%"
+                "given": "%SetInputs:given%",
+                "identifier": "%SetInputs:identifier%",
+                "legal-sex": "%SetInputs:legal-sex%",
+                "telecom": "%SetInputs:telecom%"
             },
             "sendBody": true,
             "timeout": 0,
