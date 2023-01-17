@@ -1,9 +1,14 @@
 Name: Patient Search
 ignoreDependencies: false
 VlocityDataPackKeys:
-    - certs/epicfhirnewcert.crt
     - OmniScript/EHR_EpicPatientSearch_English
+    - VlocityCard/EpicFHIRPatientSearchResults
+    - classes/getToken.cls
 VlocityTypesToFetch:
     - OmniScript
+    - VlocityCard
 SalesforceTypesToFetch:
+    - ApexClass
     - Certificate
+    - CustomObject
+    - RemoteSiteSetting
