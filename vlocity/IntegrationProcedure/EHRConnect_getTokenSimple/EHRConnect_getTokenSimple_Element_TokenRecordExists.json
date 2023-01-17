@@ -1,24 +1,24 @@
 {
-    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__Active__c": true,
     "%vlocity_namespace%__OmniScriptId__c": {
-        "Name": "EpicFHIRPatientSearch",
+        "Name": "GetEpicAPITokenSimple",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHRConnect/getTokenSimple/Procedure",
         "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
     },
     "%vlocity_namespace%__PropertySet__c": {
         "disOnTplt": false,
-        "executionConditionalFormula": "%PatientSearchR4:EPI% == null",
+        "executionConditionalFormula": "ISNOTBLANK(DRGetExistingToken)",
         "isIfElseBlock": false,
-        "label": "ConditionalBlock2",
+        "label": "ConditionalBlock5",
         "show": null
     },
     "%vlocity_namespace%__ReusableOmniScript__c": false,
     "%vlocity_namespace%__Type__c": "Conditional Block",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "NoPatientInEpic",
+    "Name": "TokenRecordExists",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/NoPatientInEpic"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHRConnect/getTokenSimple/Procedure/TokenRecordExists"
 }

@@ -1,9 +1,9 @@
 {
     "%vlocity_namespace%__Active__c": true,
     "%vlocity_namespace%__OmniScriptId__c": {
-        "Name": "EpicFHIRPatientSearch",
+        "Name": "GetEpicAPITokenSimple",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHRConnect/getTokenSimple/Procedure",
         "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
     },
     "%vlocity_namespace%__PropertySet__c": {
@@ -11,17 +11,12 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
-            "Token": "=%Token%",
-            "birthdate": "=%birthdate%",
-            "identifier": "=%identifier%",
-            "legal-sex": "=%legal-sex%",
-            "name": "=%name%",
-            "telecom": "=%telecom%"
+            "Now": "=DATETIMETOUNIX(FORMATDATETIME(NOW(),\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\",\"ETc/GMT\"))"
         },
         "executionConditionalFormula": "",
         "failOnStepError": true,
         "failureConditionalFormula": "",
-        "label": "SetValues2",
+        "label": "SetValues3",
         "responseJSONNode": "",
         "responseJSONPath": "",
         "show": null
@@ -30,8 +25,8 @@
     "%vlocity_namespace%__Type__c": "Set Values",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "SetInputs",
+    "Name": "SetNow",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/SetInputs"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHRConnect/getTokenSimple/Procedure/SetNow"
 }

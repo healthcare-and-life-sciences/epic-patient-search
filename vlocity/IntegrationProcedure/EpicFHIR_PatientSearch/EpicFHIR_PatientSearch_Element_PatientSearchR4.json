@@ -34,10 +34,9 @@
             "isCompressed": false,
             "params": {
                 "birthdate": "%SetInputs:birthdate%",
-                "family": "%SetInputs:family%",
-                "given": "%SetInputs:given%",
                 "identifier": "%SetInputs:identifier%",
                 "legal-sex": "%SetInputs:legal-sex%",
+                "name": "%SetInputs:name%",
                 "telecom": "%SetInputs:telecom%"
             },
             "sendBody": true,

@@ -1,6 +1,5 @@
 [
-    "Document/CACCBACHAa57d303fa05f4c5da3e980a753b4fc4e",
-    "Document/CACCBACHAcc702774510a40f7affd6d1900887bc7",
-    "Document/CACCBACHAf77ea1eb4ed240dfb71be136d11bc760",
-    "IntegrationProcedure/EpicFHIR_PatientSearch"
+    "IntegrationProcedure/EHR_AuthAndSearch",
+    "IntegrationProcedure/EpicFHIR_PatientSearch",
+    "IntegrationProcedure/Patient_SearchCreate"
 ]

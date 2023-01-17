@@ -201,4 +201,26 @@
             <mode value="match" />
         </search>
     </entry>
+    <entry>
+		<fullUrl value="urn:uuid:00000000-0002-0b90-fe72-a6ac462be965" />
+		<resource>
+			<OperationOutcome>
+				<issue>
+					<severity value="warning" />
+					<code value="processing" />
+					<details>
+						<coding>
+							<system value="urn:oid:1.2.840.114350.1.13.0.1.7.2.657369" />
+							<code value="4101" />
+							<display value="Resource request returns no results." />
+						</coding>
+						<text value="Resource request returns no results." />
+					</details>
+				</issue>
+			</OperationOutcome>
+		</resource>
+		<search>
+			<mode value="outcome" />
+		</search>
+	</entry>
 </Bundle>

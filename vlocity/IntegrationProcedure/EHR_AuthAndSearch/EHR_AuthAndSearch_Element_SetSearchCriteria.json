@@ -1,9 +1,9 @@
 {
     "%vlocity_namespace%__Active__c": true,
     "%vlocity_namespace%__OmniScriptId__c": {
-        "Name": "EpicFHIRPatientSearch",
+        "Name": "AuthAndSearchPatient",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHR/AuthAndSearch/Procedure",
         "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
     },
     "%vlocity_namespace%__PropertySet__c": {
@@ -11,17 +11,19 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
-            "Token": "=%Token%",
-            "birthdate": "=%birthdate%",
-            "identifier": "=%identifier%",
-            "legal-sex": "=%legal-sex%",
-            "name": "=%name%",
-            "telecom": "=%telecom%"
+            "Token": "=%GetToken:Token%",
+            "URL": "=%GetEndpoint:URL%",
+            "birthdate": "=%Step1:DOB%",
+            "env": "=%env%",
+            "identifier": "=%Step1:FHIRID%",
+            "legal-sex": "=%Step1:Sex%",
+            "name": "=%Step1:Name%",
+            "telecom": "=%Step1:Telecom%"
         },
         "executionConditionalFormula": "",
         "failOnStepError": true,
         "failureConditionalFormula": "",
-        "label": "SetValues2",
+        "label": "SetValues3",
         "responseJSONNode": "",
         "responseJSONPath": "",
         "show": null
@@ -30,8 +32,8 @@
     "%vlocity_namespace%__Type__c": "Set Values",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "SetInputs",
+    "Name": "SetSearchCriteria",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/SetInputs"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/AuthAndSearch/Procedure/SetSearchCriteria"
 }

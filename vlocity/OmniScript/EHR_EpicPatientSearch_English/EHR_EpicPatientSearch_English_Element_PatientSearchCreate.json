@@ -25,8 +25,8 @@
         "failureGoBackLabel": "Go Back",
         "failureNextLabel": "Continue",
         "inProgressMessage": "In Progress",
-        "integrationProcedureKey": "EHRConnect_getToken",
-        "label": "Get Token",
+        "integrationProcedureKey": "Patient_SearchCreate",
+        "label": "Open Patient",
         "message": {
         },
         "postMessage": "Done",
@@ -41,17 +41,27 @@
         "redirectTemplateUrl": "vlcAcknowledge.html",
         "remoteOptions": {
             "chainable": false,
-            "env": "\"Sandbox\"",
             "postTransformBundle": "",
             "preTransformBundle": "",
             "useFuture": false
         },
         "remoteTimeout": 30000,
-        "responseJSONNode": "Token",
+        "responseJSONNode": "PatientId",
         "responseJSONPath": "",
         "sendJSONNode": "",
-        "sendJSONPath": "",
-        "show": null,
+        "sendJSONPath": "Step2:CustomLWC1:selectedParentNode:selectedPatientList",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Yes",
+                        "field": "Result:NoResults"
+                    }
+                ]
+            }
+        },
         "showPersistentComponent": [
             true,
             false
@@ -67,8 +77,8 @@
     "%vlocity_namespace%__Type__c": "Integration Procedure Action",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "GetToken",
+    "Name": "PatientSearchCreate",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/GetToken"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/PatientSearchCreate"
 }

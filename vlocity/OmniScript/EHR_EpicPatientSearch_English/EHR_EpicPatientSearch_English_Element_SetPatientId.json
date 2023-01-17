@@ -10,13 +10,24 @@
         "HTMLTemplateId": "",
         "controlWidth": 12,
         "elementValueMap": {
-            "Token": "=%Token:Token%"
+            "Id": "=%PatientId:Id%"
         },
-        "label": "Token",
+        "label": "Set Patient Id",
         "message": {
         },
         "pubsub": false,
-        "show": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Yes",
+                        "field": "Result:NoResults"
+                    }
+                ]
+            }
+        },
         "showPersistentComponent": [
             true,
             false
@@ -28,8 +39,8 @@
     "%vlocity_namespace%__Type__c": "Set Values",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "Token",
+    "Name": "SetPatientId",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Token"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/SetPatientId"
 }

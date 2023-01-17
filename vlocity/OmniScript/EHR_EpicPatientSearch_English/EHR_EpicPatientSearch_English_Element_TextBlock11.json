@@ -13,13 +13,13 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English",
             "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
         },
-        "Name": "Block2",
+        "Name": "Step2",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Block2",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Step2",
         "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
     },
-    "%vlocity_namespace%__ParentElementName__c": "Block2",
-    "%vlocity_namespace%__ParentElementType__c": "Block",
+    "%vlocity_namespace%__ParentElementName__c": "Step2",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
     "%vlocity_namespace%__PropertySet__c": {
         "HTMLTemplateId": "",
         "controlWidth": 12,
@@ -27,7 +27,7 @@
         "label": "TextBlock2",
         "sanitize": false,
         "show": null,
-        "text": "<p>Patient found - opening patient record.</p>",
+        "text": "<p>Please select the patient from the search results below:</p>",
         "textKey": ""
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

@@ -8,7 +8,7 @@
     },
     "%vlocity_namespace%__PropertySet__c": {
         "HTMLTemplateId": "",
-        "allowSaveForLater": false,
+        "allowSaveForLater": true,
         "businessCategory": "",
         "businessEvent": "",
         "cancelLabel": "Cancel",
@@ -32,11 +32,11 @@
             "remoteTimeout": 30000,
             "typeFilter": ""
         },
-        "label": "Search Results",
+        "label": "Opening Patient Record",
         "message": {
         },
-        "nextLabel": "",
-        "nextWidth": "0",
+        "nextLabel": "Next",
+        "nextWidth": 3,
         "previousLabel": "",
         "previousWidth": "0",
         "pubsub": false,
@@ -52,7 +52,7 @@
                 "operator": "AND",
                 "rules": [
                     {
-                        "condition": "=",
+                        "condition": "<>",
                         "data": "Yes",
                         "field": "Result:NoResults"
                     }
@@ -71,8 +71,8 @@
     "%vlocity_namespace%__Type__c": "Step",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "SearchResults",
+    "Name": "Step3",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/SearchResults"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EHR/EpicPatientSearch/English/Step3"
 }

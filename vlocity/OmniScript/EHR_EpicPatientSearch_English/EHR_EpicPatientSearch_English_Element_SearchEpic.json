@@ -10,7 +10,7 @@
         "HTMLTemplateId": "",
         "businessCategory": "",
         "businessEvent": "",
-        "controlWidth": 5,
+        "controlWidth": 12,
         "enableActionMessage": false,
         "enableDefaultAbort": false,
         "errorMessage": {
@@ -25,8 +25,8 @@
         "failureGoBackLabel": "Go Back",
         "failureNextLabel": "Continue",
         "inProgressMessage": "In Progress",
-        "integrationProcedureKey": "EpicFHIR_PatientSearch",
-        "label": "Search Epic for Patient",
+        "integrationProcedureKey": "EHR_AuthAndSearch",
+        "label": "Search Epic",
         "message": {
         },
         "postMessage": "Done",
@@ -41,16 +41,16 @@
         "redirectTemplateUrl": "vlcAcknowledge.html",
         "remoteOptions": {
             "chainable": false,
+            "env": "%env%",
             "postTransformBundle": "",
             "preTransformBundle": "",
             "useFuture": false
         },
         "remoteTimeout": 30000,
-        "responseJSONNode": "",
+        "responseJSONNode": "Result",
         "responseJSONPath": "",
         "sendJSONNode": "",
         "sendJSONPath": "",
-        "sendOnlyExtraPayload": false,
         "show": null,
         "showPersistentComponent": [
             true,

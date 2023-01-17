@@ -14,7 +14,7 @@
         "iconName": "",
         "iconPosition": "left",
         "iconVariant": "",
-        "label": "Open Record",
+        "label": "Open Patient In SF",
         "loginAction": "login",
         "message": {
         },
@@ -28,8 +28,8 @@
                 "rules": [
                     {
                         "condition": "<>",
-                        "data": "null",
-                        "field": "Id"
+                        "data": "Yes",
+                        "field": "Result:NoResults"
                     }
                 ]
             }

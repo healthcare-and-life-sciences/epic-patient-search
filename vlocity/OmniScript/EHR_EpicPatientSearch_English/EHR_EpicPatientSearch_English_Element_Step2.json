@@ -35,8 +35,8 @@
         "label": "Search Results",
         "message": {
         },
-        "nextLabel": "",
-        "nextWidth": "0",
+        "nextLabel": "Open Patient",
+        "nextWidth": "3",
         "previousLabel": "",
         "previousWidth": "0",
         "pubsub": false,
@@ -53,8 +53,8 @@
                 "rules": [
                     {
                         "condition": "<>",
-                        "data": "null",
-                        "field": "Id"
+                        "data": "Yes",
+                        "field": "Result:NoResults"
                     }
                 ]
             }
