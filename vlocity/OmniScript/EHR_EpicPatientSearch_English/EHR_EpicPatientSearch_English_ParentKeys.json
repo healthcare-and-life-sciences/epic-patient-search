@@ -1,5 +1,3 @@
 [
-    "IntegrationProcedure/EHR_AuthAndSearch",
-    "IntegrationProcedure/EpicFHIR_PatientSearch",
     "IntegrationProcedure/Patient_SearchCreate"
 ]

@@ -11,11 +11,11 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
-            "DOB": "=%selectedPatientList:DOB%",
-            "Email": "=%selectedPatientList:Email%",
-            "FHIRID": "=%selectedPatientList:FHIRID%",
-            "FirstName": "=%selectedPatientList:FirstName%",
-            "LastName": "=%selectedPatientList:LastName%"
+            "DOB": "=%DOB%",
+            "Email": "=%Email%",
+            "FHIRID": "=%FHIRID%",
+            "FirstName": "=%FirstName%",
+            "LastName": "=%LastName%"
         },
         "executionConditionalFormula": "",
         "failOnStepError": true,

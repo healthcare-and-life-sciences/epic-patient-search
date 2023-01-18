@@ -27,7 +27,7 @@
         "label": "TextBlock2",
         "sanitize": false,
         "show": null,
-        "text": "<p>Please select the patient from the search results below:</p>",
+        "text": "<h4>Click on the desired patient below to view their record:</h4>",
         "textKey": ""
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

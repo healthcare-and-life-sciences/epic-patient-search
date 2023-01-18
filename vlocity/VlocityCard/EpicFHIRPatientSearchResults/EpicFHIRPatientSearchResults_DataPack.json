@@ -20,23 +20,28 @@
             "contextVariables": [
                 {
                     "id": 1,
-                    "name": "Name",
-                    "val": "Camila Lopez"
+                    "name": "FirstName",
+                    "val": "camila"
                 },
                 {
                     "id": 3,
-                    "name": "Email",
-                    "val": "knixontestemail@epic.com"
+                    "name": "LastName",
+                    "val": "lopes"
                 },
                 {
                     "id": 5,
-                    "name": "FHIRID",
-                    "val": "TnOZ.elPXC6zcBNFMcFA7A5KZbYxo2.4T-LylRk4GoW4B"
+                    "name": "DOB",
+                    "val": "09-12-1987"
                 },
                 {
                     "id": 7,
-                    "name": "DOB",
-                    "val": "09-12-1987"
+                    "name": "Email",
+                    "val": ""
+                },
+                {
+                    "id": 9,
+                    "name": "FHIRID",
+                    "val": ""
                 }
             ],
             "orderBy": {
@@ -50,10 +55,11 @@
                     "DOB": "{DOB}",
                     "Email": "{Email}",
                     "FHIRID": "{FHIRID}",
-                    "Name": "{Name}"
+                    "FirstName": "{FirstName}",
+                    "LastName": "{LastName}"
                 },
                 "ipMethod": "Patient_SearchCreate",
-                "jsonMap": "{\"Name\":\"{Name}\",\"Email\":\"{Email}\",\"FHIRID\":\"{FHIRID}\",\"DOB\":\"{DOB}\"}",
+                "jsonMap": "{\"FirstName\":\"{FirstName}\",\"LastName\":\"{LastName}\",\"DOB\":\"{DOB}\",\"Email\":\"{Email}\",\"FHIRID\":\"{FHIRID}\"}",
                 "resultVar": "",
                 "vlocityAsync": false
             }
@@ -61,13 +67,13 @@
     },
     "%vlocity_namespace%__Definition__c": "EpicFHIRPatientSearchResults.json",
     "%vlocity_namespace%__Description__c": "Shows a list of potential patients resulting from a search",
-    "%vlocity_namespace%__GlobalKey__c": "EpicFHIRPatientSearchResults/LizChristenbury/1/1673624352253",
+    "%vlocity_namespace%__GlobalKey__c": "EpicFHIRPatientSearchResults/LizChristenbury/2/1674073243993",
     "%vlocity_namespace%__IsChildCard__c": true,
     "%vlocity_namespace%__ParentID__c": "",
     "%vlocity_namespace%__SampleData__c": "[{\"FirstName\":\"Elijah \",\"LastName\":\"Davis\",\"Name\":\"DAVIS,ELIJAH\",\"Age\":29,\"PreferredLang\":\"English\",\"Gender\":\"M\",\"MaritalStatus\":\"Single\",\"Deceased\":\"false\",\"HomeAddress\":\"231 Aspen Street , MADISON, DANE, WI, 53791, US\",\"MobilePhone\":\"608-555-5555\",\"MyChart\":\"FHIRELIJAH\",\"EPI\":203709,\"InternalID\":\"     Z6125\",\"FHIRID\":\"TZP1AvJlIR4IZDc3myX64DDxFHjn24zSDxI1BPYXIAk4B\",\"BirthSex\":\"M\",\"SexForClinicalUse\":\"male\",\"LegalSex\":\"male\",\"Ethnicity\":\"Unknown\"}]",
     "%vlocity_namespace%__Styles__c": "",
     "%vlocity_namespace%__Type__c": "",
-    "%vlocity_namespace%__Version__c": 1,
+    "%vlocity_namespace%__Version__c": 2,
     "IsLocked": false,
     "MayEdit": true,
     "Name": "EpicFHIRPatientSearchResults",
