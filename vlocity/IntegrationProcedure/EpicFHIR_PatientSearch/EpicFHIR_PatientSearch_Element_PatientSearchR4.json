@@ -43,7 +43,7 @@
             "timeout": 0,
             "xmlEscapeResponse": false
         },
-        "restPath": "%DRGetEndpoint:URL%/api/FHIR/R4/Patient",
+        "restPath": "%SetInputs:URL%/api/FHIR/R4/Patient",
         "retryCount": 0,
         "returnOnlyAdditionalOutput": false,
         "returnOnlyFailureResponse": false,

@@ -5,20 +5,12 @@
     "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "%vlocity_namespace%__Element__c": [
         "EpicFHIR_PatientSearch_Element_SetInputs.json",
-        "EpicFHIR_PatientSearch_Element_DRGetEndpoint.json",
-        "EpicFHIR_PatientSearch_Element_ResponseAction2.json",
         "EpicFHIR_PatientSearch_Element_PatientSearchR4.json",
         "EpicFHIR_PatientSearch_Element_DRTransform1.json",
         "EpicFHIR_PatientSearch_Element_DRTransform2.json",
         "EpicFHIR_PatientSearch_Element_IfNoPatient.json",
         "EpicFHIR_PatientSearch_Element_NoResults.json",
-        "EpicFHIR_PatientSearch_Element_ResponseAction4.json",
-        "EpicFHIR_PatientSearch_Element_PatientInEpic.json",
-        "EpicFHIR_PatientSearch_Element_SearchSF.json",
-        "EpicFHIR_PatientSearch_Element_SendAccountId.json",
-        "EpicFHIR_PatientSearch_Element_NoPatientInEpic.json",
-        "EpicFHIR_PatientSearch_Element_NoPatientMsg.json",
-        "EpicFHIR_PatientSearch_Element_ResponseData.json"
+        "EpicFHIR_PatientSearch_Element_ResponseAction4.json"
     ],
     "%vlocity_namespace%__IsLwcEnabled__c": false,
     "%vlocity_namespace%__IsProcedure__c": true,

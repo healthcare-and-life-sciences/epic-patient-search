@@ -27,7 +27,7 @@
         "label": "TextBlock2",
         "sanitize": false,
         "show": null,
-        "text": "<p>To search for a different patient, please refresh your browser's webpage.</p>",
+        "text": "<p>To search for a different patient, please click \"New Search\".</p>",
         "textKey": ""
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

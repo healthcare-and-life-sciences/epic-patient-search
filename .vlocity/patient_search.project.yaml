@@ -4,6 +4,9 @@ VlocityDataPackKeys:
     - OmniScript/EHR_EpicPatientSearch_English
     - VlocityCard/EpicFHIRPatientSearchResults
     - classes/getToken.cls
+    - objects/Epic_Access__c/Epic_Access__c.object
+    - objects/Epic_FHIR_Endpoint__c/Epic_FHIR_Endpoint__c.object
+    - remoteSiteSettings/Epic_FHIR.remoteSite
 VlocityTypesToFetch:
     - OmniScript
     - VlocityCard

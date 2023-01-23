@@ -12,7 +12,9 @@
         "disOnTplt": false,
         "elementValueMap": {
             "Token": "=%Token%",
+            "URL": "=%URL%",
             "birthdate": "=%birthdate%",
+            "env": "=%env%",
             "identifier": "=%identifier%",
             "legal-sex": "=%legal-sex%",
             "name": "=%name%",
