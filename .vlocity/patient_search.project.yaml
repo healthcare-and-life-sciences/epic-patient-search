@@ -3,15 +3,20 @@ ignoreDependencies: false
 VlocityDataPackKeys:
     - OmniScript/EHR_EpicPatientSearch_English
     - VlocityCard/EpicFHIRPatientSearchResults
-    - classes/getToken.cls
     - objects/Epic_Access__c/Epic_Access__c.object
     - objects/Epic_FHIR_Endpoint__c/Epic_FHIR_Endpoint__c.object
-    - remoteSiteSettings/Epic_FHIR.remoteSite
+    - objects/Epic_Access__c/fields/Access_Token__c.field
+    - objects/Epic_Access__c/fields/Expire_DateTime__c.field
+    - objects/Epic_Access__c/fields/ExpireEpoch__c.field
+    - objects/Epic_Access__c/fields/Expires_In_Seconds__c.field
+    - objects/Epic_Access__c/fields/ExpiresWhen__c.field
+    - objects/Epic_FHIR_Endpoint__c/fields/cert__c.field
+    - objects/Epic_FHIR_Endpoint__c/fields/client_id__c.field
+    - objects/Epic_FHIR_Endpoint__c/fields/jti__c.field
+    - objects/Epic_FHIR_Endpoint__c/fields/URL__c.field
 VlocityTypesToFetch:
     - OmniScript
     - VlocityCard
 SalesforceTypesToFetch:
-    - ApexClass
-    - Certificate
+    - CustomField
     - CustomObject
-    - RemoteSiteSetting
