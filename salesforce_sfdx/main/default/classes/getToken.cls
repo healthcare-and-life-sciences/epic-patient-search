@@ -8,16 +8,17 @@
  *
  * Class to generate a JWT Token for use with APIs
  *
- * Version 1.0
+ * Version 2.0
  *
  * November 15, 2022
+ * February 20, 2023 - Changed to implement Callable for use with Standard runtime
  *
  * author: Derek Cassese - Accelerate HLS - dcassese@salesforce.com
  * code was adapted by Starter Class written by Charles McGuinness
  *
  */
 
-global with sharing class getToken implements vlocity_ins.VlocityOpenInterface {
+ global with sharing class getToken implements Callable {
     // This is used for debugging purposes: a method can put information in this, and
     // if an exception is thrown, it will be included in the report back to the caller.
 
@@ -46,6 +47,15 @@ global with sharing class getToken implements vlocity_ins.VlocityOpenInterface {
         thisMessage.put('Text', message);
 
         debugLog.add(thisMessage);
+    }
+
+    public Object call(String action, Map<String, Object> args) {
+
+        Map<String, Object> input = (Map<String, Object>)args.get('input');
+        Map<String, Object> output = (Map<String, Object>)args.get('output');
+        Map<String, Object> options = (Map<String, Object>)args.get('options');
+
+        return InvokeMethod(action, input, output, options);
     }
 
     /*
