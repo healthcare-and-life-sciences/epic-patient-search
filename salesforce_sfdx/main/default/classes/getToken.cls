@@ -182,7 +182,7 @@
             }
         }
 
-        System.debug('YES. We have a access token: ' + access_token);
+
     }
 
     public static String base64URLencode(Blob input) {
