@@ -62,7 +62,7 @@
      * Standard entrypoint for VlocityOpenInterface.
      */
     global Boolean InvokeMethod(String methodName, Map<String, Object> input, Map<String, Object> output, Map<String, Object> options) {
-        System.debug('In Method');
+
         try {
             initLog(output);
 
@@ -88,27 +88,27 @@
         HttpRequest httpReq = new HttpRequest();
         HttpResponse httpRes = new HttpResponse();
 
-        System.debug('Inside getToken');
+
 
         String access_token = null;
 
         String iss = (String) options.get('ISS');
-        System.debug('ISS: ' + iss);
+
         iss = String.isBlank(iss) ? DEFAULT_ISS : iss;
 
         String sub = (String) options.get('SUB');
-        System.debug('SUB: ' + sub);
+
         sub = String.isBlank(sub) ? DEFAULT_SUB : sub;
 
         String aud = (String) options.get('AUD');
-        System.debug('AUD: ' + aud);
+
         aud = String.isBlank(aud) ? DEFAULT_AUD : aud;
 
         //String jti = 'derekjwt';
         String jti = (String) options.get('JTI');
-        System.debug('Jti is : ' + jti);
+
         jti = String.isBlank(jti) ? DEFAULT_JTI : jti;
-        System.debug('Now Jti is : ' + jti);
+
 
         // Expiration time of the JWT itself
 
@@ -116,7 +116,7 @@
         String fixedExp = String.valueOf(exp);
         fixedExp = fixedExp.subString(0, fixedExp.length() - 3);
         output.put('Expiration', fixedExp);
-        System.debug('Original Exp: ' + exp + ' and Fixed is ' + fixedExp);
+
         // Start constructing the header and claims
         // The "alg" will pretty much always be "RS256" with Salesforce
         String jwtHeader = '{"alg":"RS256","typ":"JWT"}';
@@ -129,11 +129,11 @@
         // This variant of Base64 is called Base64Url
         String encodedHeader = base64URLencode(Blob.valueOf(jwtHeader));
         String jwtRequest = encodedHeader + '.' + base64URLencode(Blob.valueOf(jwtClaims));
-        System.debug('Cleaned Request: ' + jwtRequest);
+
 
         Blob signature = null;
         String certname = (String) options.get('Cert');
-        System.debug('CERT Name: ' + certname);
+
         certname = String.isBlank(certname) ? DEFAULT_CERT : certname;
 
         signature = Crypto.signWithCertificate('rsa-sha256', Blob.valueOf(jwtRequest), certname);
@@ -150,8 +150,7 @@
 
         payload += '&client_assertion=' + signedJwtRequest;
         //payload += '&client_assertion=' + token;
-        System.debug('JWT : ' + signedJwtRequest);
-        System.debug('Payload : ' + payload);
+
 
         Http httpObj = new Http();
         HttpRequest req = new HttpRequest();
@@ -161,9 +160,9 @@
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/x-www-form-urlencoded');
         req.setBody(payload);
-        System.debug('Payload: ' + payload);
+
         res = httpObj.send(req);
-        System.debug(res.getBody());
+
         try {
             if (res.getStatusCode() == 200) {
                 Map<String, Object> responseMap = (Map<String, Object>) JSON.deserializeUntyped(res.getBody());
@@ -171,14 +170,13 @@
                 access_token = (String) responseMap.get('access_token');
                 output.put('Token', access_token);
             } else {
-                System.debug('JWTBearerFlow Error Occurred ' + res.getBody());
+                System.debug('JWTBearerFlow Error Occurred ');
             }
         } catch (Exception ex) {
             if (String.valueOf(ex).startsWith('Unauthorized endpoint')) {
-                System.debug('JWTBearerFlow Please check Setup->Security->Remote site settings and add ' + aud);
+                System.debug('JWTBearerFlow Please check Setup->Security->Remote site settings and add aud');
             } else {
-                System.debug('JWTBearerFlow  ' + ex.getStackTraceString());
-                System.debug('JWTBearerFlow ' + ex);
+                System.debug('JWTBearerFlow  ');
             }
         }
 
