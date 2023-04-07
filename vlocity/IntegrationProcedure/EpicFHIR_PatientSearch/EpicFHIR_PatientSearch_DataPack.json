@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "This Integration Procedure searches for a matching patient given user-defined inputs using Epic FHIR APIs",
+    "%vlocity_namespace%__CustomJavaScript__c": "EpicFHIR_PatientSearch_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "EpicFHIR_PatientSearch_Element_SetInputs.json",
+        "EpicFHIR_PatientSearch_Element_PatientSearchR4.json",
+        "EpicFHIR_PatientSearch_Element_DRTransform1.json",
+        "EpicFHIR_PatientSearch_Element_DRTransform2.json",
+        "EpicFHIR_PatientSearch_Element_ResponseAction4.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__OmniProcessType__c": "Integration Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "EpicFHIR_PatientSearch",
+    "%vlocity_namespace%__PropertySet__c": "EpicFHIR_PatientSearch_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "PatientSearch",
+    "%vlocity_namespace%__Type__c": "EpicFHIR",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "EpicFHIRPatientSearch",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure"
+}
