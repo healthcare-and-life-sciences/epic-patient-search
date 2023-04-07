@@ -123,7 +123,6 @@ Named Credential (1)
     2. Navigate to the **Formulas** tab
     3. Replace the value in the left hand pane to your org’s **Record Type ID** value for the **Person Account Record Type**
 
-![](/images/image5.png)
 4. Add the installed OmniScript to the App Home Page of your choosing. 
     1. Refer to this article for more information regarding adding OmniScripts to a Lightning Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
 
