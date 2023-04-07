@@ -111,7 +111,6 @@ Named Credential (1)
         1. App Page
         2. Home Page
         3. Record Page
-        4. ![](/images/image3.png)
 
 2. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
