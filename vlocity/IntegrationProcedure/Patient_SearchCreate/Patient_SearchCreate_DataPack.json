@@ -1,0 +1,31 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Searches the Salesforce system for a matching patient. If no Person Account is found, then it creates a new Account for them.",
+    "%vlocity_namespace%__CustomJavaScript__c": "Patient_SearchCreate_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Patient_SearchCreate_Element_SetPatientInputs.json",
+        "Patient_SearchCreate_Element_FindPatient.json",
+        "Patient_SearchCreate_Element_NoPersonAccount.json",
+        "Patient_SearchCreate_Element_CreatePersonAccount.json",
+        "Patient_SearchCreate_Element_SendPatientId.json",
+        "Patient_SearchCreate_Element_PersonAccountFound.json",
+        "Patient_SearchCreate_Element_SendPatientInfo.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__OmniProcessType__c": "Integration Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Patient_SearchCreate",
+    "%vlocity_namespace%__PropertySet__c": "Patient_SearchCreate_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "SearchCreate",
+    "%vlocity_namespace%__Type__c": "Patient",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "PatientSearchCreate",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Patient/SearchCreate/Procedure"
+}
