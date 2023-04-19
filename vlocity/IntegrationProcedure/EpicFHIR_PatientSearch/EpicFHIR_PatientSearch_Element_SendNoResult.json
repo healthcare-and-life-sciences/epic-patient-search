@@ -13,20 +13,19 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure",
             "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
         },
-        "Name": "Result",
+        "Name": "NoResult",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/Result",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/NoResult",
         "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
     },
-    "%vlocity_namespace%__ParentElementName__c": "Result",
+    "%vlocity_namespace%__ParentElementName__c": "NoResult",
     "%vlocity_namespace%__ParentElementType__c": "Conditional Block",
     "%vlocity_namespace%__PropertySet__c": {
         "additionalOutput": {
-            "NoResult": "=%NoResult%"
         },
         "disOnTplt": false,
         "executionConditionalFormula": "",
-        "label": "ResponseAction4",
+        "label": "ResponseAction5",
         "responseDefaultData": {
         },
         "responseFormat": "JSON",
@@ -35,7 +34,7 @@
         "returnFullDataJSON": false,
         "returnOnlyAdditionalOutput": false,
         "sendJSONNode": "",
-        "sendJSONPath": "DRTransform2",
+        "sendJSONPath": "Flag",
         "show": null,
         "useFormulas": true,
         "vlcResponseHeaders": {
@@ -45,8 +44,8 @@
     "%vlocity_namespace%__Type__c": "Response Action",
     "IsLocked": false,
     "MayEdit": true,
-    "Name": "ResponseAction4",
+    "Name": "SendNoResult",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
-    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/ResponseAction4"
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/EpicFHIR/PatientSearch/Procedure/SendNoResult"
 }

@@ -53,8 +53,8 @@
                 "rules": [
                     {
                         "condition": "=",
-                        "data": "Yes",
-                        "field": "Result:NoResults"
+                        "data": "true",
+                        "field": "Result:NoResult"
                     }
                 ]
             }
