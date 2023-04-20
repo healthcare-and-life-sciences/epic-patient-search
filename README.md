@@ -146,9 +146,16 @@ It will also improve a user's experience by providing a single user interface to
         7. jti: salesforce
         8. cert: fhirdemo_cert
         9. callback uri: [https://](https://%3Cyour/)<your salesforce org domain>/services/authcallback/Epic_JWT_Auth
+2. Add your API endpoint to Remote Site Settings
+    1. Setup > Remote Site Settings
+    2. New
+    3. Enter a name and then the URL of your API - e.g., https://fhir.epic.com/interconnect-fhir-oauth/ 
+    4. Save
+
+
 
 ![](/images/psimage4.png)
-1. **Create a new Named Credential**
+3. **Create a new Named Credential**
     1. Setup > Named Credential > New Legacy
         1. Name: Must be Epic Auth JWT
         2. URL: the URL of the endpoint you are going to connect to. For example, https://fhir.epic.com/interconnect-fhir-oauth/ 
@@ -159,7 +166,7 @@ It will also improve a user's experience by providing a single user interface to
 
 
 ![](/images/psimage5.png)
-1. Click on **App Launcher →** Search for “**FlexCards**”
+4. Click on **App Launcher →** Search for “**FlexCards**”
     1. Open the EpicPatientSearchResults Flexcards
     2. Deactivate and re-Activate the FlexCard
     3. Choose the following Publish Options:
@@ -168,18 +175,18 @@ It will also improve a user's experience by providing a single user interface to
         3. Record Page
 
     ![](/images/psimage6.png)
-2. Click on **App Launcher** → Search for “OmniScripts”
+5. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
         1. Deactivate the OmniScript
         2. **Activate** the OmniScript. Be sure to activate the FlexCard in the previous step before re-activating the OmniScript.
     2. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
-3. Click on **App Launcher** → Search for “DataRaptors” 
+6. Click on **App Launcher** → Search for “DataRaptors” 
     1. Open the **DRCreatePersonAccount** DataRaptor
     2. Navigate to the **Formulas** tab
     3. Replace the value in the left hand pane to your org’s **Record Type ID** value for the **Person Account Record Type**
 
 ![](/images/psimage7.png)
-1. Add the installed OmniScript to the App Home Page of your choosing. 
+7. Add the installed OmniScript to the App Home Page of your choosing. 
     1. Refer to this article for more information regarding adding OmniScripts to a Lightning Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
 
 * * *
