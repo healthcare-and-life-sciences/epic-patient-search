@@ -102,7 +102,7 @@ It will also improve a user's experience by providing a single user interface to
     2. Enable Identity Provider according to these steps: https://help.salesforce.com/s/articleView?id=sf.identity_provider_enable.htm&type=5
     3. Create Custom Metadata for Authentication Provider:
         1. Setup > Custom Metadata Types
-        2. New Metadata Type - ensure it is named **“ClientCredentialJWT”**
+        2. New Metadata Type - ensure it is named **“ClientCredentialsJWT”**
         3. Add the following Custom fields:
             1. aud
             2. callback uri
