@@ -145,7 +145,7 @@ It will also improve a user's experience by providing a single user interface to
         6. aud: set this to the API endpoint for authentication - either the MuleSoft API or Epic FHIR API - e.g., https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token
         7. jti: salesforce
         8. cert: fhirdemo_cert
-        9. callback url: [https://](https://%3Cyour/)<your salesforce org domain>/services/authcallback/Epic_JWT_Auth
+        9. callback uri: [https://](https://%3Cyour/)<your salesforce org domain>/services/authcallback/Epic_JWT_Auth
 
 ![](/images/psimage4.png)
 1. **Create a new Named Credential**
