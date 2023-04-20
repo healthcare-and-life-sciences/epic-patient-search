@@ -105,7 +105,7 @@ It will also improve a user's experience by providing a single user interface to
         2. New Metadata Type - ensure it is named **“ClientCredentialJWT”**
         3. Add the following Custom fields:
             1. aud
-            2. callback url
+            2. callback uri
             3. cert
             4. iss
             5. jti
