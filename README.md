@@ -150,11 +150,13 @@ It will also improve a user's experience by providing a single user interface to
 ![](/images/psimage4.png)
 1. **Create a new Named Credential**
     1. Setup > Named Credential > New Legacy
-        1. Give your Named Credential a name 
-        2. Identity Type: Named Principal
-        3. Authentication Protocol: OAuth 2.0
-        4. Authentication Provider: the name of your Authentication Provider above
-        5. “Run Authentication Flow on Save”: Checked
+        1. Name: Must be Epic Auth JWT
+        2. URL: the URL of the endpoint you are going to connect to. For example, https://fhir.epic.com/interconnect-fhir-oauth/ 
+        3. Identity Type: Named Principal
+        4. Authentication Protocol: OAuth 2.0
+        5. Authentication Provider: the name of your Authentication Provider above
+        6. “Run Authentication Flow on Save”: Checked
+
 
 ![](/images/psimage5.png)
 1. Click on **App Launcher →** Search for “**FlexCards**”
