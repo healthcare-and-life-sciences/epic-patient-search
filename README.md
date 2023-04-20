@@ -55,11 +55,25 @@ It will also improve a user's experience by providing a single user interface to
 
 * EHR/EpicPatientSearch
 
-### **Integration Procedures (2)**
+### **Integration Procedures (3)**
 
 * EHR/AuthAndSearch
 * EpicFHIR/PatientSearch
 * Patient/SearchCreate
+
+### DataRaptors (4)
+
+* EpicPatientSearchTransform
+* EpicPatientSearchTransform2
+* DRFindPersonAccount
+* DRCreatePersonAccount
+
+### Documents (Logos) (4)
+
+* Epic logo transparent.png
+* nurse.png
+* clinical_fe.png
+* phone.png
 
 ### FlexCards (1)
 
@@ -83,10 +97,10 @@ It will also improve a user's experience by providing a single user interface to
     4. Install the Epic on FHIR App called “**Salesforce Health Cloud - Clinical Summary**” into your Epic organization.
         1. **Client ID:** 43b0500b-ea80-41d4-be83-21230c837c15
 2. **Salesforce Pre-Installation Steps:**
-    1. Ensure your Salesforce Health Cloud org has OmniStudio installed. 
+    1. Ensure your Salesforce Health Cloud org has OmniStudio installed - either the Vlocity HINS package or Core OmniStudio. 
         1. To verify installation, please navigate to Setup > Installed Packages > OmniStudio.
-        2. If OmniStudio is not installed, please follow the instructions found here: https://help.salesforce.com/s/articleView?id=sf.os_omnistudio_release_summary_for_installation_and_upgrade.htm&type=5
-    2. Create Custom Metadata for Authentication Provider:
+    2. Enable Identity Provider according to these steps: https://help.salesforce.com/s/articleView?id=sf.identity_provider_enable.htm&type=5
+    3. Create Custom Metadata for Authentication Provider:
         1. Setup > Custom Metadata Types
         2. New Metadata Type - ensure it is named **“ClientCredentialJWT”**
         3. Add the following Custom fields:
@@ -101,11 +115,24 @@ It will also improve a user's experience by providing a single user interface to
 
 #### Install the Accelerator 
 
-1. Use IDX to install the files located in the GitHub repository here: [https://github.com/healthcare-and-life-sciences/epic-patient-search](https://github.com/healthcare-and-life-sciences/epic-fhir-clinical-flexcards)
+1. Follow the download steps in the "Download Now" flow presented on the HLS Accelerators website for this Accelerator which downloads the following GitHub repository on your machine: https://github.com/healthcare-and-life-sciences/epic-fhir-clinical-flexcards
+2. Unzip the resulting .zip file which is downloaded to your machine. 
+3. Open the “OmniStudio” folder
+    1. If you have the Vlocity_ins package installed in your org, open the folder titled “Vlocity Version”.
+    2. If you have Core OmniStudio installed in your org, or if you have converted over from Vlocity_ins to Core, open the folder titled “Core OmniStudio Version”.
+    3. Install the appropriate DataPack into your org. 
+        1. Click on App Launcher → Search for 'OmniStudio DataPacks' and click on it.
+        2. Click on 'Installed' > Import > From File
+        3. When the window opens, select the json file identified in the previous step. Click 'Open' then click 'Next' 3 times.
+        4. If prompted to Active, choose Activate Later. 
+4. Open the “salesforce-sfdx” folder. Use IDX or sfdx to install the files under the “salesforce-sfdx” folder.
     1. To access the IDX workbench, please navigate to this URL: https://workbench.developerforce.com/login.php
     2. For more information regarding IDX, please review this Trailhead: https://trailhead.salesforce.com/content/learn/modules/omnistudio-developer-tools
+5. Import the keystore FHIRDEMOKEYSTORE.jks from .zip file
+    1. Setup > Certificates and Key Management > Import from Keystore
+    2. Password: salesforce1
 
-### **Post-Install Configuration Steps (Direct Connection to Epic FHIR APIs):**
+### **Post-Install Configuration Steps - Direct Connection to Epic FHIR APIs:**
 
 1. Create a new Authentication Provider
     1. Setup > Auth Providers
@@ -113,8 +140,8 @@ It will also improve a user's experience by providing a single user interface to
         1. Provider Type: Custom
         2. Name: Epic_JWT_Auth
         3. Plugin: ClientCredentialJWT
-        4. iss: 7a88a6d4-453f-4b34-a48e-e4a5c667285a
-        5. sub: 7a88a6d4-453f-4b34-a48e-e4a5c667285a
+        4. iss: 43b0500b-ea80-41d4-be83-21230c837c15
+        5. sub: 43b0500b-ea80-41d4-be83-21230c837c15
         6. aud: set this to the API endpoint for authentication - either the MuleSoft API or Epic FHIR API - e.g., https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token
         7. jti: salesforce
         8. cert: fhirdemo_cert
@@ -137,7 +164,8 @@ It will also improve a user's experience by providing a single user interface to
         1. App Page
         2. Home Page
         3. Record Page
-![](/images/psimage6.png)
+
+    ![](/images/psimage6.png)
 2. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
         1. Deactivate the OmniScript
@@ -170,6 +198,8 @@ It will also improve a user's experience by providing a single user interface to
     * January 4, 2023 - Initial draft
     * January 23, 2023 - Updated documentation
     * April 7, 2023 - Updated documentation
+
+
 
 
 
