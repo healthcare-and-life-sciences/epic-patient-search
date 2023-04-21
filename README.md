@@ -8,6 +8,8 @@ The Epic Patient Search accelerator enables customers to search for a patient in
 
 The accelerator is compatible with both MuleSoft or via a direct connection via FHIR APIs with Epic. After a few configuration steps, an organization is ready to start using the Patient Search component in their workflows.
 
+The setup instructions below detail how to connect the Accelerator directly to your Epic instance. Please contact your MuleSoft AE for support in connecting the Accelerator to MuleSoft.
+
 It is assumed that an organization has enabled their Patient R4 FHIR API in their Epic system which is what supports the patient search capability.
 
 ![](/images/psimage1.png)
