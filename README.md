@@ -174,7 +174,8 @@ It will also improve a user's experience by providing a single user interface to
         2. Home Page
         3. Record Page
 
-    ![](/images/psimage6.png)
+![](/images/psimage6.png)
+
 5. Click on **App Launcher** >> Search for "Integration Procedures"
     1. Open the EHR/AuthAndSearch Integration Procedure. 
     2. Click "Activate" at the bottom of the Procedure Configuration screen.
