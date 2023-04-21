@@ -188,7 +188,7 @@ It will also improve a user's experience by providing a single user interface to
         2. Open up the Step 1 Element and click on the selection boxes which hold the three search options. 
         3. Øn the Properties pane, click on the hyperlink name of one of the option titles, and then click the Save button. 
         4. **Activate** the OmniScript. Be sure to activate the FlexCard in the previous step before re-activating the OmniScript.
-        5. Click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
+        5. If you are using Core OmniStudio on Health Cloud, click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
     2. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
 
 7. Click on **App Launcher** → Search for “DataRaptors” 
