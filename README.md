@@ -175,7 +175,13 @@ It will also improve a user's experience by providing a single user interface to
         3. Record Page
 
     ![](/images/psimage6.png)
-5. Click on **App Launcher** → Search for “OmniScripts”
+5. Click on **App Launcher** >> Search for "Integration Procedures"
+    1. Open the EHR/AuthAndSearch Integration Procedure. 
+    2. Click "Activate" at the bottom of the Procedure Configuration screen.
+    3. Close the Integration Procedure.
+    4. Repeat the steps above for the Integration Procedures titled "EpicFHIR/PatientSearch" and "Patient/SearchCreate".
+
+6. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
         1. Deactivate the OmniScript
         2. Open up the Step 1 Element and click on the selection boxes which hold the three search options. 
@@ -183,13 +189,15 @@ It will also improve a user's experience by providing a single user interface to
         4. **Activate** the OmniScript. Be sure to activate the FlexCard in the previous step before re-activating the OmniScript.
         5. Click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
     2. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
-6. Click on **App Launcher** → Search for “DataRaptors” 
+
+7. Click on **App Launcher** → Search for “DataRaptors” 
     1. Open the **DRCreatePersonAccount** DataRaptor
     2. Navigate to the **Formulas** tab
     3. Replace the value in the left hand pane to your org’s **Record Type ID** value for the **Person Account Record Type**
 
 ![](/images/psimage7.png)
-7. Add the installed OmniScript to the App Home Page of your choosing. 
+
+8. Add the installed OmniScript to the App Home Page of your choosing. 
     1. Refer to this article for more information regarding adding OmniScripts to a Lightning Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
 
 * * *
