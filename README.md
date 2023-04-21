@@ -178,8 +178,10 @@ It will also improve a user's experience by providing a single user interface to
 5. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
         1. Deactivate the OmniScript
-        2. **Activate** the OmniScript. Be sure to activate the FlexCard in the previous step before re-activating the OmniScript.
-        3. Click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
+        2. Open up the Step 1 Element and click on the selection boxes which hold the three search options. 
+        3. Øn the Properties pane, click on the hyperlink name of one of the option titles, and then click the Save button. 
+        4. **Activate** the OmniScript. Be sure to activate the FlexCard in the previous step before re-activating the OmniScript.
+        5. Click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
     2. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
 6. Click on **App Launcher** → Search for “DataRaptors” 
     1. Open the **DRCreatePersonAccount** DataRaptor
