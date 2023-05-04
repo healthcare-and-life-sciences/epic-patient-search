@@ -92,17 +92,17 @@ It will also improve a user's experience by providing a single user interface to
 ### **Pre-Install Configuration Steps:**
 
 1. **EHR Pre-Instllation Steps:**
-    1. Identify your [fhir.epic.com](https://fhir.epic.com/) endpoint
+    1. If you are connecting to Epic directly, identify your [fhir.epic.com](https://fhir.epic.com/) endpoint. If you are connecting to Epic via MuleSoft, you can skip this step.
     2. Confirm that your endpoint is configured such that the following APIs are active - for full reference, please refer to the [fhir.epic.com](http://fhir.epic.com/) API documentation.
         1. api/FHIR/R4/Patient
-    3. Ensure your EHR system's network is configured to accept traffic from your Health Cloud org
-    4. Install the Epic on FHIR App called “**Salesforce Health Cloud - Clinical Summary**” into your Epic organization.
+    3. If you are connecting to Epic directly, ensure your EHR system's network is configured to accept traffic from your Health Cloud org. If you are connecting to Epic via MuleSoft, you can skip this step.
+    4. If you are connecting to Epic directly, install the Epic on FHIR App called “**Salesforce Health Cloud - Clinical Summary**” into your Epic organization. If you are connecting to Epic via MuleSoft, you can skip this step.
         1. **Client ID:** 43b0500b-ea80-41d4-be83-21230c837c15
 2. **Salesforce Pre-Installation Steps:**
     1. Ensure your Salesforce Health Cloud org has OmniStudio installed - either the Vlocity HINS package or Core OmniStudio. 
         1. To verify installation, please navigate to Setup > Installed Packages > OmniStudio.
     2. Enable Identity Provider according to these steps: https://help.salesforce.com/s/articleView?id=sf.identity_provider_enable.htm&type=5
-    3. Create Custom Metadata for Authentication Provider:
+    3. If you are connecting to Epic directly, create Custom Metadata for Authentication Provider. If you are connecting to Epic via MuleSoft, you can skip this step.
         1. Setup > Custom Metadata Types
         2. New Metadata Type - ensure it is named **“ClientCredentialsJWT”**
         3. Add the following Custom fields:
@@ -127,16 +127,16 @@ It will also improve a user's experience by providing a single user interface to
         2. Click on 'Installed' > Import > From File
         3. When the window opens, select the json file identified in the previous step. Click 'Open' then click 'Next' 3 times.
         4. If prompted to Active, choose Activate Later. 
-4. Open the “salesforce-sfdx” folder. Use IDX or sfdx to install the files under the “salesforce-sfdx” folder.
+4. If you are connecting to Epic directly, open the “salesforce-sfdx” folder. Use IDX or sfdx to install the files under the “salesforce-sfdx” folder. If you are connecting to Epic via MuleSoft, you can skip this step.
     1. To access the IDX workbench, please navigate to this URL: https://workbench.developerforce.com/login.php
     2. For more information regarding IDX, please review this Trailhead: https://trailhead.salesforce.com/content/learn/modules/omnistudio-developer-tools
-5. Import the keystore FHIRDEMOKEYSTORE.jks from .zip file
+5. If you are connecting to Epic directly, import the keystore FHIRDEMOKEYSTORE.jks from .zip file. If you are connecting to Epic via MuleSoft, you can skip this step.
     1. Setup > Certificates and Key Management > Import from Keystore
     2. Password: salesforce1
 
 ### **Post-Install Configuration Steps - Direct Connection to Epic FHIR APIs:**
 
-1. Create a new Authentication Provider
+1. Create a new Authentication Provider. If you are connecting to Epic via MuleSoft, you can skip this step.
     1. Setup > Auth Providers
     2. Create a New Authentication Provider
         1. Provider Type: Custom
@@ -148,7 +148,7 @@ It will also improve a user's experience by providing a single user interface to
         7. jti: salesforce
         8. cert: fhirdemo_cert
         9. callback uri: [https://](https://%3Cyour/)<your salesforce org domain>/services/authcallback/Epic_JWT_Auth
-2. Add your API endpoint to Remote Site Settings
+2. Add your API endpoint to Remote Site Settings. If you are connecting to Epic via MuleSoft, you can skip this step.
     1. Setup > Remote Site Settings
     2. New
     3. Enter a name and then the URL of your API - e.g., https://fhir.epic.com/interconnect-fhir-oauth/ 
@@ -157,8 +157,8 @@ It will also improve a user's experience by providing a single user interface to
 
 
 ![](/images/psimage4.png)
-3. **Create a new Named Credential**
-    1. Setup > Named Credential > New Legacy
+3. **Create a new Named Credential - Direct Connection to Epic FHIR APIs:**
+    1. Setup > Named Credential > New Legacy. If you are connecting to Epic via MuleSoft, you can skip this step.
         1. Name: Must be Epic Auth JWT
         2. URL: the URL of the endpoint you are going to connect to. For example, https://fhir.epic.com/interconnect-fhir-oauth/ 
         3. Identity Type: Named Principal
@@ -166,9 +166,19 @@ It will also improve a user's experience by providing a single user interface to
         5. Authentication Provider: the name of your Authentication Provider above
         6. “Run Authentication Flow on Save”: Checked
 
+4. If you are using MuleSoft to connect to Epic, follow these steps to configure the Integration Procedure to call MuleSoft APIs:
+   1. Follow the Epic Administration System API Setup Guide, if it has not already been completed as part of your MuleSoft implementation. https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-administration-sys-api/minor/1.0/pages/edh-nhj/Setup%20Guide/
+   2. Create new Remote Site (Setup > Remote Site Settings > New Remote Site) with the URL of the newly-created MuleSoft app.
+   3. Create a Named Credential for your MuleSoft app.
+   4. Update each HTTP Action element of the Integration Procedure titled EpicFHIRPatientSearch with the following:
+      1. Path = endpoint of your MuleSoft app.
+      2. Named Credential = the name of your MuleSoft Named Credential from step 3 above.
+      3. Use the Preview pane to test the updates to the Integration Procedure.
+      4. Activate the Integration Procedure.
+
 
 ![](/images/psimage5.png)
-4. Click on **App Launcher →** Search for “**FlexCards**”
+5. Click on **App Launcher →** Search for “**FlexCards**”
     1. Open the EpicPatientSearchResults Flexcards
     2. Deactivate and re-Activate the FlexCard
     3. Choose the following Publish Options:
@@ -178,13 +188,13 @@ It will also improve a user's experience by providing a single user interface to
 
 ![](/images/psimage6.png)
 
-5. Click on **App Launcher** >> Search for "Integration Procedures"
+6. Click on **App Launcher** >> Search for "Integration Procedures"
     1. Open the EHR/AuthAndSearch Integration Procedure. 
     2. Click "Activate" at the bottom of the Procedure Configuration screen.
     3. Close the Integration Procedure.
     4. Repeat the steps above for the Integration Procedures titled "EpicFHIR/PatientSearch" and "Patient/SearchCreate".
 
-6. Click on **App Launcher** → Search for “OmniScripts”
+7. Click on **App Launcher** → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view - EHR/EpicPatientSearch
         1. Deactivate the OmniScript
         2. Open up the Step 1 Element and click on the selection boxes which hold the three search options. 
@@ -193,14 +203,14 @@ It will also improve a user's experience by providing a single user interface to
         5. If you are using Core OmniStudio on Health Cloud, click on the drop-down arrow next to "Active" and select "Deploy Standard Run Time Compatible LWC".
     2. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
 
-7. Click on **App Launcher** → Search for “DataRaptors” 
+8. Click on **App Launcher** → Search for “DataRaptors” 
     1. Open the **DRCreatePersonAccount** DataRaptor
     2. Navigate to the **Formulas** tab
     3. Replace the value in the left hand pane to your org’s **Record Type ID** value for the **Person Account Record Type**
 
 ![](/images/psimage7.png)
 
-8. Add the installed OmniScript to the App Home Page of your choosing. 
+9. Add the installed OmniScript to the App Home Page of your choosing. 
     1. Refer to this article for more information regarding adding OmniScripts to a Lightning Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
 
 * * *
@@ -212,6 +222,7 @@ It will also improve a user's experience by providing a single user interface to
 3. Data Model elements that are part of the HINS (Vlocity) Managed package or Health Cloud with OmniStudio are all available.
 4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 5. A customer has an administrator/developer who is familiar with IDX and OmniStudio.
+6. A customer is live with Epic EHR and has their FHIR R4 server active.
 
 * * *
 
@@ -221,6 +232,7 @@ It will also improve a user's experience by providing a single user interface to
     * January 4, 2023 - Initial draft
     * January 23, 2023 - Updated documentation
     * April 7, 2023 - Updated documentation
+    * May 4, 2023 - updated with configuration steps for MuleSoft customers
 
 
 
