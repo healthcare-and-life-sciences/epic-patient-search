@@ -223,6 +223,7 @@ It will also improve a user's experience by providing a single user interface to
 4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 5. A customer has an administrator/developer who is familiar with IDX and OmniStudio.
 6. A customer is live with Epic EHR and has their FHIR R4 server active.
+7. Epic is a trademark of Epic Systems Corporation.
 
 * * *
 
