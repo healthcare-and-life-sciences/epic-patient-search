@@ -115,6 +115,7 @@ It will also improve a user's experience by providing a single user interface to
 		* Click on **"Installed"** > Import > From File
 		* When the window opens, select the .json file identified in the previous step. Click **"Open"** then click 'Next' 3 times.
 		* When prompted, click **"Activate Now"**.
+  * If for some reason the Search option images do not appear, you can find copies of these free images in the Git repo under SearchImages.
 
 ### 3. Integration Configuration
 
