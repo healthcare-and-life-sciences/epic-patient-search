@@ -90,7 +90,7 @@ It will also improve a user's experience by providing a single user interface to
 
 ### 1. Pre-Install Configuration Steps:
 
-#### EHR Pre-Instllation Steps:
+#### EHR Pre-Installation Steps:
 
 * Confirm that your endpoint is configured such that the following APIs are active - for full reference, please refer to the [fhir.epic.com](http://fhir.epic.com/) API documentation.
         1. api/FHIR/R4/Patient
